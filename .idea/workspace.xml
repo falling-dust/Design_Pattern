@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Composite/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Composite/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Composite/MenuOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/CheckIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/LineUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade/SignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/CatContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/CatIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/GameContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/GameIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/Iterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterator/GameContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterator/GameIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +87,7 @@
       <workItem from="1671093915710" duration="9101000" />
       <workItem from="1671113746358" duration="670000" />
       <workItem from="1671161105455" duration="8751000" />
+      <workItem from="1671208146401" duration="1685000" />
     </task>
     <servers />
   </component>
