@@ -5,33 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DesignPattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/Ancestry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/BloodlineLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/Breed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/CatFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/CatIngredientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/ChineseRuralCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/CompetitionLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/GarfieldCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/PetLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SimpleFactory/RagdollCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/State/CatState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/State/StateCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/State/StateContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/State/StatePerfect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/State/StateTired.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Composite/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Composite/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Composite/MenuOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/CheckIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/Facade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/LineUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Facade/SignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/CatContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/CatIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/GameContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/GameIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +42,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -64,19 +61,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/schoolProject/study/软件设计模式/DesignPattern/src/State",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/schoolProject/study/软件设计模式/DesignPattern/src/State&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\schoolProject\study\软件设计模式\DesignPattern\src\State" />
@@ -86,6 +84,9 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="" />
@@ -95,6 +96,8 @@
       <updated>1671081750493</updated>
       <workItem from="1671081751835" duration="1491000" />
       <workItem from="1671093915710" duration="9101000" />
+      <workItem from="1671113746358" duration="670000" />
+      <workItem from="1671161105455" duration="8751000" />
     </task>
     <servers />
   </component>
@@ -106,7 +109,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Siyuson" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
