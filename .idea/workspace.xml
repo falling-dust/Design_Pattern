@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" afterDir="false" />
+    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/GameContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/GameIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +81,8 @@
       <workItem from="1671113746358" duration="670000" />
       <workItem from="1671161105455" duration="8751000" />
       <workItem from="1671208146401" duration="1685000" />
+      <workItem from="1671236409647" duration="682000" />
+      <workItem from="1671269261944" duration="134000" />
     </task>
     <servers />
   </component>

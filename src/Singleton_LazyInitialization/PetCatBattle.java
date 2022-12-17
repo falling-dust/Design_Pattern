@@ -3,10 +3,15 @@ package Singleton_LazyInitialization;
 import Composite.Menu;
 import Composite.MenuOption;
 import Facade.Facade;
+import Filter.AndCriteria;
+import Filter.CompetitionLevelCriteria;
+import Filter.Criteria;
+import Filter.RagDollCatCriteria;
 import Iterator.CatContainer;
 import SimpleFactory.Cat;
 import SimpleFactory.CatFactory;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PetCatBattle {
@@ -194,6 +199,21 @@ public class PetCatBattle {
 //                    if (gameVisited == 3) {
 //                        System.out.println("");
 //                    }
+
+                    //Filter 如下
+                    Criteria ragDollCriteria = new RagDollCatCriteria();
+                    Criteria competitionLevelCriteria = new CompetitionLevelCriteria();
+
+                    System.out.println("\n ----- Before Filtering: ----- ");
+                    for (Cat cat : CatContainer.getInstance().getCats()) {
+                        System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
+                    }
+                    AndCriteria andCriteria = new AndCriteria(ragDollCriteria, competitionLevelCriteria);
+                    ArrayList<Cat> filterList = andCriteria.meetCriteria(CatContainer.getInstance().getCats());
+                    System.out.println("\n ----- After Filtering(CompetitionLevel RogDollCat): ----- ");
+                    for (Cat cat : filterList) {
+                        System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
+                    }
                     break;
                 }
                 case 2://饮品台
