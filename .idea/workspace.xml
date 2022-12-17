@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Mediator/CMediatorFn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mediator/Colleague.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mediator/ConcreteCat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mediator/ConcreteMediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mediator/ConcreteOthers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mediator/Mediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/AbstractCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/CustomerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/NullCustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/NullPatternTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NullObject/RealCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,13 +43,16 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2Iw9OlZ0Z17ae26woDKlroNObR3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -115,5 +117,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
