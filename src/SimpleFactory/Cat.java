@@ -38,18 +38,6 @@ public class Cat {
             beauty = 99;
             skill = 108;
         }
-
-        if (catAncestry.getAncestry() == "血统级") {
-            speed *= 1.1;
-            intelligence *= 1.1;
-            beauty *= 1.1;
-            skill *= 1.1;
-        } else if (catAncestry.getAncestry() == "赛级") {
-            speed *= 1.2;
-            intelligence *= 1.2;
-            beauty *= 1.2;
-            skill *= 1.2;
-        }
     }
 
     //getter & stter

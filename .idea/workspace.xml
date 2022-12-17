@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Decorator/CondimentDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decorator/CondimentDecorator.java" afterDir="false" />
+    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Facade/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterator/GameContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Iterator/GameContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterator/GameIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Iterator/GameIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prototpye_Flyweight/AudienceCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/AudienceCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prototpye_Flyweight/CPrototypeFn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/CPrototypeFn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleFactory/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleFactory/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleFactory/CatFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleFactory/CatFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/HandcraftComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/HandcraftComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,32 +53,42 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2Iw9OlZ0Z17ae26woDKlroNObR3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/15045/Desktop/DESIGN PATTERN/Design_Pattern/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+
+
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/！TONGJI/TJ3.1/软件设计模式/DesignPattern-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\15045\Desktop\DESIGN PATTERN\Design_Pattern\src" />
+
+      <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Iterator" />
+      <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src" />
+      <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Builder" />
       <recent name="D:\schoolProject\study\软件设计模式\DesignPattern\src\State" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Template_Strategy" />
+      <recent name="AbstractFactory" />
       <recent name="State" />
     </key>
   </component>
@@ -83,7 +108,9 @@
       <workItem from="1671113746358" duration="670000" />
       <workItem from="1671161105455" duration="8751000" />
       <workItem from="1671208146401" duration="1685000" />
-      <workItem from="1671246363718" duration="8097000" />
+      <workItem from="1671211597605" duration="2857000" />
+      <workItem from="1671248101792" duration="5309000" />
+      <workItem from="1671266725109" duration="6420000" />
     </task>
     <servers />
   </component>
@@ -112,5 +139,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
