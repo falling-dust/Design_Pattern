@@ -4,15 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" afterDir="false" />
+    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更">
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Breed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompHandcraft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompPageant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompQuiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompRace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/GameType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Judcat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatHandcraftFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatPageantFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatQuizFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatRaceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Judge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeIngredientFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Builder/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Builder/GamesBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChainOfResponsibility/AbstractOpponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChainOfResponsibility/CatFighter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ChainOfResponsibility/CatFighters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/GameContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/GameIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/CatObserve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/ScoreSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Observer/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servant/Preparation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servant/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/HandcraftComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/Audience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/CVisitorFn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/Hall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/RankingList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/RankingViewer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Visitor/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/GameContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/GameIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +83,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/schoolProject/study/软件设计模式/DesignPattern/src/State&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/25096/Desktop/高程作业/软件设计模式/Design_Pattern",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\schoolProject\study\软件设计模式\DesignPattern\src\State" />
@@ -88,6 +121,8 @@
       <workItem from="1671113746358" duration="670000" />
       <workItem from="1671161105455" duration="8751000" />
       <workItem from="1671208146401" duration="1685000" />
+      <workItem from="1671211597605" duration="2857000" />
+      <workItem from="1671248101792" duration="4977000" />
     </task>
     <servers />
   </component>
