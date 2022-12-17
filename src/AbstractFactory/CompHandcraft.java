@@ -1,5 +1,6 @@
 package AbstractFactory;
 
+
 public class CompHandcraft implements  GameClass {
     @Override
     public String toString() {

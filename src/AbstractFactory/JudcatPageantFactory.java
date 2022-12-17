@@ -8,7 +8,9 @@ public class JudcatPageantFactory implements JudgeIngredientFactory {
     }
 
     @Override
+
     public GameClass CreateClass() {
+
         return new CompPageant();
     }
 }

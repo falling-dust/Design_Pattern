@@ -7,6 +7,9 @@ import Iterator.CatContainer;
 import SimpleFactory.Cat;
 import SimpleFactory.CatFactory;
 
+import Bridge.*;
+import FactoryMethod.*;
+
 import java.util.Scanner;
 
 public class PetCatBattle {
@@ -236,23 +239,34 @@ public class PetCatBattle {
 //                    CVisitorFn.VisitorFn(n, game);
                     break;
                 case 4://购买装备
-//                    //待修改
-//                    System.out.println("欢迎光临运动装备专卖店！");
-//                    System.out.println("选购心仪的装备 [1]运动跑鞋 [2]运动护腕");
-//                    int k = input.nextInt();
-//                    if (k == 1) {
-//                        SportShoesFactory sportShoesFactory = new SportShoesFactory();
-//                        Equipment sportShoes = sportShoesFactory.createEquipment(player);
-//                        EquipmentImplementor ei = new PerfectEquip();
-//                        AbstractAnimalEquip equipment = new SportShoesEquipment(ei);
-//                        equipment.EquipEquipment(player, sportShoes);
-//                    } else if (k == 2) {
-//                        BracerFactory bracerFactory = new BracerFactory();
-//                        Equipment bracer = bracerFactory.createEquipment(player);
-//                        EquipmentImplementor ei = new PerfectEquip();
-//                        AbstractAnimalEquip equipment = new BracerEquipment(ei);
-//                        equipment.EquipEquipment(player, bracer);
-//                    }
+
+                   //待修改
+                   System.out.println("欢迎光临运动装备专卖店！");
+                   System.out.println("选购心仪的装备 [1]博士眼镜 [2]讲究围巾");
+                   int k = input.nextInt();
+                   if (k == 1) {
+                        System.out.println(petCat.getCatName()+"原来的美貌值是："+petCat.getBeauty());
+                        System.out.println(petCat.getCatName()+"原来的智力值是："+petCat.getIntelligence());
+                        GlassesFactory glassesFactory = new GlassesFactory();
+                        Equipment glasses = glassesFactory.createEquipment(petCat);
+                        EquipmentImplementor ei = new PerfectEquip();
+                        AbstractCatEquip equipment = new GlassesEquipment(ei);
+                        equipment.EquipEquipment(petCat, glasses);
+                        System.out.println(petCat.getCatName()+"现在的美貌值是："+petCat.getBeauty());
+                        System.out.println(petCat.getCatName()+"现在的智力值是："+petCat.getIntelligence());
+                   } else if (k == 2) {
+                        System.out.println(petCat.getCatName()+"原来的速度值是："+petCat.getSpeed());
+                        System.out.println(petCat.getCatName()+"原来的技巧值是："+petCat.getSkill());
+                        ScarfFactory scarfFactory = new ScarfFactory();
+                        Equipment scarf = scarfFactory.createEquipment(petCat);
+                        EquipmentImplementor ei = new PerfectEquip();
+                        AbstractCatEquip equipment = new ScarfEquipment(ei);
+                        equipment.EquipEquipment(petCat, scarf);
+                        System.out.println(petCat.getCatName()+"原来的速度值是："+petCat.getSpeed());
+                        System.out.println(petCat.getCatName()+"原来的技巧值是："+petCat.getSkill());
+                   }
+
+                   System.out.println();
                     break;
                 case 5:
 //                    ScoreSheet proxyScoreSheet = new ProxyScoreSheet();

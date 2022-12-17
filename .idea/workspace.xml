@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/CompHandcraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/CompHandcraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/CompPageant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/CompPageant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/CompQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/CompQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/CompRace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/CompRace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/GameType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/GameClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudcatHandcraftFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatHandcraftFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudcatPageantFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatPageantFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudcatQuizFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatQuizFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudcatRaceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatRaceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/Judge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/Judge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudgeIngredientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeIngredientFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudgeStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeStore.java" afterDir="false" />
-    </list>
+    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,22 +36,29 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2Iw9OlZ0Z17ae26woDKlroNObR3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+
     "last_opened_file_path": "G:/Code&Project/NekoPro/Design_Pattern/src/Iterator",
+
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -77,6 +75,9 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="" />
@@ -86,7 +87,11 @@
       <updated>1671081750493</updated>
       <workItem from="1671081751835" duration="1491000" />
       <workItem from="1671093915710" duration="9101000" />
-      <workItem from="1671239557483" duration="15789000" />
+      <workItem from="1671113746358" duration="670000" />
+      <workItem from="1671161105455" duration="8751000" />
+      <workItem from="1671208146401" duration="1685000" />
+      <workItem from="1671211597605" duration="2857000" />
+      <workItem from="1671248101792" duration="5309000" />
     </task>
     <servers />
   </component>
@@ -98,10 +103,25 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Siyuson" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

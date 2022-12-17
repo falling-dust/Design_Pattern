@@ -5,7 +5,6 @@ import AbstractFactory.JudgeStore;
 import Iterator.CatContainer;
 import Iterator.JudgeContainer;
 import SimpleFactory.Cat;
-import SimpleFactory.Cat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,15 +25,17 @@ public abstract class Game {
                 judge = JudgeStore.getInstance().orderJudge("Race");
                 judge.setJudgeName("裁判猫猫-竞速组");
                 break;
-            case "智力比赛":
-                judge = JudgeStore.getInstance().orderJudge("Quiz");
-                judge.setJudgeName("裁判猫猫-智力组");
-                break;
+                
             case "选美比赛":
                 judge = JudgeStore.getInstance().orderJudge("Pageant");
                 judge.setJudgeName("裁判猫猫-选美组");
                 break;
-            case "技巧比赛":
+
+            case "智力比赛":
+                judge = JudgeStore.getInstance().orderJudge("Quiz");
+                judge.setJudgeName("裁判猫猫-智力组");
+                break;
+            case "技术比赛":
                 judge = JudgeStore.getInstance().orderJudge("Handcraft");
                 judge.setJudgeName("裁判猫猫-技术组");
                 break;

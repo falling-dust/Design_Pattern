@@ -3,8 +3,10 @@ package AbstractFactory;
 public class Judge {
     /*   软件包指定种类和吹罚比赛，名字在game设置    */
     private String JudgeName;
+
     private Breed JudgeBreed;
     private  GameClass gameClass;
+
 
     private JudgeIngredientFactory factory;
 
@@ -25,6 +27,7 @@ public class Judge {
         JudgeName = judgeName;
     }
 
+
     public  GameClass getGameClass() {
         return gameClass;
     }
@@ -39,5 +42,6 @@ public class Judge {
 
     public void setGameClass( GameClass gameClass) {
         this.gameClass = gameClass;
+
     }
 }
