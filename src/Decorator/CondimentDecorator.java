@@ -1,7 +1,7 @@
 package Decorator;
 
 public class CondimentDecorator extends Food {
-    //装饰者类（食品添加配料）
+    //装饰者类（添加投喂配料）
 
     private Food myFood;
 

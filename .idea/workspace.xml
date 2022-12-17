@@ -5,37 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Adapter/AliAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/AliPay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/HuaBei.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/Pay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Adapter/WechatPay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/AddMilkCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/AddProteinPowderCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/AddVitaminCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/CCommandFn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/CareTaker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/FeedCondiment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/FeedCookiesCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/FeedMeatCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/FeedWaterCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command_Memento/Memento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decorator/CondimentDecorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decorator/Cookies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decorator/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decorator/Meat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decorator/Milk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decorator/ProteinPowder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decorator/Vitamin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Decorator/Water.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interpreter/ExchangePrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interpreter/InterpreterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interpreter/OriginalPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interpreter/Price.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interpreter/PriceOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Decorator/CondimentDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Decorator/CondimentDecorator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +83,7 @@
       <workItem from="1671113746358" duration="670000" />
       <workItem from="1671161105455" duration="8751000" />
       <workItem from="1671208146401" duration="1685000" />
-      <workItem from="1671246363718" duration="7828000" />
+      <workItem from="1671246363718" duration="8097000" />
     </task>
     <servers />
   </component>
