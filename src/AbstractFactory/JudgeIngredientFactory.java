@@ -4,7 +4,7 @@ public interface JudgeIngredientFactory {
 
     Breed CreateBreed();   //
 
-    GameType CreateType();   //
+    GameClass CreateClass();   //
 
 
 }

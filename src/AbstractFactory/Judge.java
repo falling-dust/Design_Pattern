@@ -3,8 +3,8 @@ package AbstractFactory;
 public class Judge {
     /*   软件包指定种类和吹罚比赛，名字在game设置    */
     private String JudgeName;
-    private Breed JudgeRace;
-    private GameType gameType;
+    private Breed JudgeBreed;
+    private  GameClass gameClass;
 
     private JudgeIngredientFactory factory;
 
@@ -25,19 +25,19 @@ public class Judge {
         JudgeName = judgeName;
     }
 
-    public GameType getGameType() {
-        return gameType;
+    public  GameClass getGameClass() {
+        return gameClass;
     }
 
-    public Breed getJudgeRace() {
-        return JudgeRace;
+    public Breed getJudgeBreed() {
+        return JudgeBreed;
     }
 
-    public void setJudgeRace(Breed judgeRace) {
-        JudgeRace = judgeRace;
+    public void setJudgeBreed(Breed judgeBreed) {
+        JudgeBreed = judgeBreed;
     }
 
-    public void setGameType(GameType gameType) {
-        this.gameType = gameType;
+    public void setGameClass( GameClass gameClass) {
+        this.gameClass = gameClass;
     }
 }

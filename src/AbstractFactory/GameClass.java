@@ -1,5 +1,5 @@
 package AbstractFactory;
 
-public interface GameType {
+public interface GameClass {
     String toString();
 }

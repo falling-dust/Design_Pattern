@@ -8,7 +8,7 @@ public class JudcatQuizFactory implements JudgeIngredientFactory {
     }
 
     @Override
-    public GameType CreateType() {
+    public GameClass CreateClass() {
         return new CompQuiz();
     }
 }

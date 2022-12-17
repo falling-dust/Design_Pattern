@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public class CompQuiz implements GameType {
+public class CompQuiz implements  GameClass {
     @Override
     public String toString() {
         return "CompQuiz";

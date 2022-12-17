@@ -8,7 +8,7 @@ public class JudcatHandcraftFactory implements JudgeIngredientFactory {
     }
 
     @Override
-    public GameType CreateType() {
+    public  GameClass CreateClass() {
         return new CompHandcraft();
     }
 }
