@@ -5,14 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Adapter/AliAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Adapter/AliPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Adapter/HuaBei.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Adapter/Pay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Adapter/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Adapter/WechatPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/AddMilkCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/AddProteinPowderCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/AddVitaminCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/CCommandFn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/CareTaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/FeedCondiment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/FeedCookiesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/FeedMeatCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/FeedWaterCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command_Memento/Memento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decorator/CondimentDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decorator/Cookies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decorator/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decorator/Meat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decorator/Milk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decorator/ProteinPowder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decorator/Vitamin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Decorator/Water.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interpreter/ExchangePrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interpreter/InterpreterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interpreter/OriginalPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interpreter/Price.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interpreter/PriceOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/GameContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/GameIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LazyInitialization/PetCatBattle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,22 +73,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/schoolProject/study/软件设计模式/DesignPattern/src/State&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/15045/Desktop/DESIGN PATTERN/Design_Pattern/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\15045\Desktop\DESIGN PATTERN\Design_Pattern\src" />
       <recent name="D:\schoolProject\study\软件设计模式\DesignPattern\src\State" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -88,6 +113,7 @@
       <workItem from="1671113746358" duration="670000" />
       <workItem from="1671161105455" duration="8751000" />
       <workItem from="1671208146401" duration="1685000" />
+      <workItem from="1671246363718" duration="7828000" />
     </task>
     <servers />
   </component>
@@ -105,7 +131,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Siyuson" />
+                        <option value="fqr" />
                       </list>
                     </value>
                   </entry>
