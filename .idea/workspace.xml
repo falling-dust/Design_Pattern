@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Builder/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer/CatObserve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer/ScoreSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/GameContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Iterator/GameIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Proxy/ProxyScoreSheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Proxy/RealScoreSheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Proxy/ScoreSheet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/HandCraftComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/HandcraftComp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudcatHandcraftFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatHandcraftFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudcatPageantFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatPageantFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudcatQuizFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatQuizFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudcatRaceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatRaceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudgeIngredientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeIngredientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AbstractFactory/JudgeStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Builder/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Builder/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/Code&Project/NekoPro/Design_Pattern/src",
+    "last_opened_file_path": "G:/Code&Project/NekoPro/Design_Pattern/src/Iterator",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,9 +65,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Iterator" />
       <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src" />
       <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Builder" />
-      <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Iterator" />
       <recent name="D:\schoolProject\study\软件设计模式\DesignPattern\src\State" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -83,7 +86,7 @@
       <updated>1671081750493</updated>
       <workItem from="1671081751835" duration="1491000" />
       <workItem from="1671093915710" duration="9101000" />
-      <workItem from="1671239557483" duration="11354000" />
+      <workItem from="1671239557483" duration="13208000" />
     </task>
     <servers />
   </component>

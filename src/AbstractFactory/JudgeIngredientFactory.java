@@ -2,7 +2,7 @@ package AbstractFactory;
 
 public interface JudgeIngredientFactory {
 
-    Breed CreateRace();   //
+    Breed CreateBreed();   //
 
     GameType CreateType();   //
 

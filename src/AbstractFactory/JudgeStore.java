@@ -41,7 +41,7 @@ public class JudgeStore {
     public Judge orderJudge(String JudgeName) {
         Judge judge = createJudge(JudgeName);
         judge.setGameType(judge.getFactory().CreateType());
-        judge.setJudgeRace(judge.getFactory().CreateRace());
+        judge.setJudgeRace(judge.getFactory().CreateBreed());
         return judge;
     }
 

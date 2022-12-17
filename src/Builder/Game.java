@@ -36,7 +36,7 @@ public abstract class Game {
                 break;
             case "技巧比赛":
                 judge = JudgeStore.getInstance().orderJudge("Handcraft");
-                judge.setJudgeName("裁判猫猫-技巧组");
+                judge.setJudgeName("裁判猫猫-技术组");
                 break;
             default:
                 break;
