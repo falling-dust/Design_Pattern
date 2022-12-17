@@ -27,6 +27,7 @@ import Bridge.*;
 import FactoryMethod.*;
 import State.StateCommon;
 import State.StatePerfect;
+import State.StateTired;
 import Template_Strategy.HandcraftComp;
 import Template_Strategy.PageantComp;
 import Template_Strategy.QuizComp;
@@ -64,7 +65,7 @@ public class PetCatBattle {
         String name = input.nextLine();
         System.out.println("选择你的物种 [1]中华田园猫 [2]布偶猫 [3]加菲猫");
         int breedNum = input.nextInt();
-        System.out.println("选择你的宠物血统等级 [1]宠物级（免费！） [2]血统级（1000猫猫币） [3]赛级（2000猫猫币）");
+        System.out.println("选择你的宠物血统等级 [1]宠物级（免费！） [2]血统级（3000猫猫币） [3]赛级（5000猫猫币）");
         int ancestryNum = input.nextInt();
 
         String breed = "";
@@ -91,11 +92,11 @@ public class PetCatBattle {
                 break;
             case 2:
                 ancestry = "血统级";
-                money = 9000;
+                money = 7000;
                 break;
             case 3:
                 ancestry = "赛级";
-                money = 8000;
+                money = 5000;
                 break;
             default:
                 break;
@@ -129,8 +130,6 @@ public class PetCatBattle {
         Menu rootMenu = new Menu("大厅选择");
         //第一个比赛菜单
         Menu gameMenu = new Menu("比赛");
-        //创建比赛实例
-        //实例待填写
         int element = 0;
         MenuOption speed_race = new MenuOption("竞速比赛", GameContainer.getInstance().get(0));
         MenuOption beauty_race = new MenuOption("选美比赛", GameContainer.getInstance().get(1));
@@ -141,11 +140,10 @@ public class PetCatBattle {
         gameMenu.add(beauty_race);
         gameMenu.add(intelligence_race);
         gameMenu.add(skill_race);
-        //喂养猫猫（对应饮品台，我们补充消耗金币功能）
-        MenuOption drinkTable = new MenuOption("猫猫喂食区", element);
+        MenuOption drinkTable = new MenuOption("猫猫喂食区", CCommandFn.getInstance());
         MenuOption queryRank = new MenuOption("询问比赛成绩", element);
         MenuOption buyEquipment = new MenuOption("购买猫猫神装", element);
-        MenuOption printRank = new MenuOption("打印不成绩单", element);
+        MenuOption printRank = new MenuOption("打印成绩单", element);
         MenuOption meetAudience = new MenuOption("猫猫友好会晤", element);
         rootMenu.add(gameMenu);
         rootMenu.add(drinkTable);
@@ -155,6 +153,8 @@ public class PetCatBattle {
         rootMenu.add(meetAudience);
         // 菜单以及选择返回
         rootMenu.printMenu();
+        System.out.println("目前猫猫币剩余："+money);
+        System.out.println("猫猫的心情状态是："+petCat.getCatState().toString());
         int i = input.nextInt();
         int gameVisited = 0;
         while (i != 0) {
@@ -216,6 +216,19 @@ public class PetCatBattle {
                         default:
                             break;
                     }
+                    System.out.println("猫猫参加完比赛有点累，状态下降！");
+                    switch (petCat.getCatState().toString()) {
+                        case "StatePerfect":
+                            petCat.setCatState(new StateCommon());
+                            break;
+                        case "StateCommon":
+                            petCat.setCatState(new StateTired());
+                            break;
+                        case "StateTired":
+                            break;
+                        default:
+                            break;
+                    }
                     if (gameVisited == 4) {
                         System.out.println("");
                     }
@@ -231,10 +244,11 @@ public class PetCatBattle {
                     }
                     if(isDrink){
                         System.out.println("在猫猫喂食区休息了一会儿，状态提升！");
+                        money-=1000;
                         switch (petCat.getCatState().toString()) {
                             case "StatePerfect":
                                 break;
-                            case "StateGood":
+                            case "StateCommon":
                                 petCat.setCatState(new StatePerfect());
                                 break;
                             case "StateTired":
@@ -274,6 +288,7 @@ public class PetCatBattle {
                         equipment.EquipEquipment(petCat, glasses);
                         System.out.println(petCat.getCatName()+"现在的美貌值是："+petCat.getBeauty());
                         System.out.println(petCat.getCatName()+"现在的智力值是："+petCat.getIntelligence());
+                        money-=1000;
                    } else if (k == 2) {
                         System.out.println(petCat.getCatName()+"原来的速度值是："+petCat.getSpeed());
                         System.out.println(petCat.getCatName()+"原来的技巧值是："+petCat.getSkill());
@@ -284,6 +299,7 @@ public class PetCatBattle {
                         equipment.EquipEquipment(petCat, scarf);
                         System.out.println(petCat.getCatName()+"原来的速度值是："+petCat.getSpeed());
                         System.out.println(petCat.getCatName()+"原来的技巧值是："+petCat.getSkill());
+                       money-=1000;
                    }
 
                    System.out.println();
@@ -307,23 +323,33 @@ public class PetCatBattle {
                 System.out.println("所有比赛均已结束！");
                 break;
             }
-            
-            //Filter 如下
-                    Criteria ragDollCriteria = new RagDollCatCriteria();
-                    Criteria competitionLevelCriteria = new CompetitionLevelCriteria();
 
-                    System.out.println("\n ----- Before Filtering: ----- ");
-                    for (Cat cat : CatContainer.getInstance().getCats()) {
-                        System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
+            if(gameVisited==2){
+                //Filter 如下
+                Criteria ragDollCriteria = new RagDollCatCriteria();
+                Criteria competitionLevelCriteria = new CompetitionLevelCriteria();
+                System.out.println("铛铛铛！出现突发事件！有猫猫质检员要来进行血统筛查！他要给每只赛级布偶猫3000猫猫币！");
+                System.out.println("输入任意数字+回车以继续");
+                int opt = input.nextInt();
+                System.out.println("\n ----- 血统筛选之前: ----- ");
+                for (Cat cat : CatContainer.getInstance().getCats()) {
+                    System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
+                }
+                AndCriteria andCriteria = new AndCriteria(ragDollCriteria, competitionLevelCriteria);
+                ArrayList<Cat> filterList = andCriteria.meetCriteria(CatContainer.getInstance().getCats());
+                System.out.println("\n ----- 经过筛查(赛级布偶猫): ----- ");
+                for (Cat cat : filterList) {
+                    System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
+                    if (petCat.getCatName()==cat.getCatName()){
+                        System.out.println("你获得了3000猫猫币！恭喜恭喜！");
+                        money+=3000;
                     }
-                    AndCriteria andCriteria = new AndCriteria(ragDollCriteria, competitionLevelCriteria);
-                    ArrayList<Cat> filterList = andCriteria.meetCriteria(CatContainer.getInstance().getCats());
-                    System.out.println("\n ----- After Filtering(CompetitionLevel RogDollCat): ----- ");
-                    for (Cat cat : filterList) {
-                        System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
-                        }
-            
+                }
+            }
+
             rootMenu.printMenu();
+            System.out.println("目前猫猫币剩余："+money);
+            System.out.println("猫猫的心情状态是："+petCat.getCatState().toString());
             i = input.nextInt();
         }
         System.out.println("养成比拼到此结束！感谢你的参与");

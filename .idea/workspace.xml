@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command_Memento/CCommandFn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command_Memento/CCommandFn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command_Memento/FeedCondiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command_Memento/FeedCondiment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mediator/CMediatorFn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mediator/CMediatorFn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleFactory/CatFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleFactory/CatFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/State/StateCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State/StateCommon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/State/StatePerfect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State/StatePerfect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/State/StateTired.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State/StateTired.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,5 +34,16 @@
 }]]></component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -18,6 +18,6 @@ public class StateCommon extends CatState {
 
     @Override
     public String toString() {
-        return "StateGood";
+        return "StateCommon";
     }
 }

@@ -56,6 +56,7 @@ public class FeedCondiment {
                 System.out.println("您的最终投喂: " + myFood.getDescription());
                 return true;
             }
+
             System.out.println("\n请选择你需要添加的配料:");
             System.out.println("[0]退出 [1]维生素剂 [2]牛奶 [3]蛋白粉 [4]撤销 [5]重做 [6]确认:");
             j = scan_input1.nextInt();

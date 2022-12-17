@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
 
         System.out.println("欢迎使用猫猫养成battle模拟系统！");
-        System.out.println("选择启动模式 [1]游玩模式");
+        System.out.println("输入数字+按回车开始游戏吧！");
         Scanner input = new Scanner(System.in);
         int opt = input.nextInt();
 

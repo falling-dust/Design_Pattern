@@ -22,7 +22,7 @@ public class CMediatorFn {
         mediator.setOthers(Others);
         mediator.setCat(Athlete);
 
-        Others.send("在饮品台偶遇其他猫咪选手，通知了你尽快参加比赛。");
+        Others.send("在猫猫喂食区偶遇其他猫咪选手，通知了你尽快参加比赛。");
     }
 
 }

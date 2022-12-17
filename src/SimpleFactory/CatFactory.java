@@ -27,15 +27,15 @@ public class CatFactory {
         }
 
         if (ancestry == "血统级") {
-            cat.setSpeed(cat.getSpeed()* 1.1) ;
-            cat.setIntelligence(cat.getIntelligence()*1.1);
-            cat.setBeauty(cat.getBeauty()*1.1);
-            cat.setSkill(cat.getSkill()* 1.1); ;
+            cat.setSpeed(Math.round(cat.getSpeed()* 1.1)) ;
+            cat.setIntelligence(Math.round(cat.getIntelligence()*1.1));
+            cat.setBeauty(Math.round(cat.getBeauty()*1.1));
+            cat.setSkill(Math.round(cat.getSkill()* 1.1));
         } else if (ancestry == "赛级") {
-            cat.setSpeed(cat.getSpeed()* 1.2) ;
-            cat.setIntelligence(cat.getIntelligence()*1.2);
-            cat.setBeauty(cat.getBeauty()*1.2);
-            cat.setSkill(cat.getSkill()* 1.2); ;
+            cat.setSpeed(Math.round(cat.getSpeed()* 1.2)) ;
+            cat.setIntelligence(Math.round(cat.getIntelligence()*1.2));
+            cat.setBeauty(Math.round(cat.getBeauty()*1.2));
+            cat.setSkill(Math.round(cat.getSkill()* 1.2));
         }
         cat.setRank(new int[]{0, 0, 0});
         cat.setScore(new double[]{0, 0, 0});

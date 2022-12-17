@@ -40,8 +40,8 @@ public class CCommandFn {
                     Food myMeat = feedMeat.getMyFood();
                     foodList.append(feedMeat, myMeat.createMemento());
                     FeedCondiment meatCondiment = new FeedCondiment(foodList, myMeat);
-                    meatCondiment.start();
                     isFed = meatCondiment.start();
+                    System.out.println(isFed);
                     break;
                 }
                 case 2: {
@@ -52,7 +52,6 @@ public class CCommandFn {
                     Food myCookies = feedCookies.getMyFood();
                     foodList.append(feedCookies, myCookies.createMemento());
                     FeedCondiment cookiesCondiment = new FeedCondiment(foodList, myCookies);
-                    cookiesCondiment.start();
                     isFed = cookiesCondiment.start();
                     break;
                 }
@@ -64,7 +63,6 @@ public class CCommandFn {
                     Food myWater = feedWater.getMyFood();
                     foodList.append(feedWater, myWater.createMemento());
                     FeedCondiment waterCondiment = new FeedCondiment(foodList, myWater);
-                    waterCondiment.start();
                     isFed = waterCondiment.start();
                     break;
                 }
@@ -81,8 +79,8 @@ public class CCommandFn {
         //如果投喂成功，则进行支付
         if (isFed) {
             Price price = new Price();
-            price.SetOriPrice(10f);
-            System.out.println("您的点单原价为10");
+            price.SetOriPrice(100f);
+            System.out.println("您的点单原价为100");
             price.SetExchange(10f);
             System.out.println("目前汇率 —— 1:10");
             OriginalPrice oriPriceInterpreter = new OriginalPrice();

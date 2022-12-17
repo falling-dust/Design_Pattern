@@ -12,7 +12,7 @@ public class StateTired extends CatState {
 
     @Override
     public double getState() {
-        return 0.8;
+        return 0.7;
     }
 
     @Override

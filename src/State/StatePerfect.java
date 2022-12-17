@@ -12,7 +12,7 @@ public class StatePerfect extends CatState {
 
     @Override
     public double getState() {
-        return 1.2;
+        return 1.1;
     }
 
     @Override
