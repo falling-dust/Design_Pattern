@@ -3,12 +3,16 @@ package AbstractFactory;
 public class JudcatHandcraftFactory implements JudgeIngredientFactory {
     // 吹罚技术比赛
     @Override
-    public Breed CreateRace() {
+
+    public Breed CreateBreed() {
+
         return new Judcat();
     }
 
     @Override
-    public GameType CreateType() {
+
+    public  GameClass CreateClass() {
+
         return new CompHandcraft();
     }
 }

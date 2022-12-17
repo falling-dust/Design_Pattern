@@ -40,8 +40,10 @@ public class JudgeStore {
     //传入名字 ， 裁判类别和比赛类别自动设置
     public Judge orderJudge(String JudgeName) {
         Judge judge = createJudge(JudgeName);
-        judge.setGameType(judge.getFactory().CreateType());
-        judge.setJudgeRace(judge.getFactory().CreateRace());
+
+        judge.setGameClass(judge.getFactory().CreateClass());
+        judge.setJudgeBreed(judge.getFactory().CreateBreed());
+
         return judge;
     }
 

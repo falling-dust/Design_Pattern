@@ -50,7 +50,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/！TONGJI/TJ3.1/软件设计模式/DesignPattern-main",
+
+    "last_opened_file_path": "G:/Code&Project/NekoPro/Design_Pattern/src/Iterator",
+
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,9 +63,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Iterator" />
+      <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src" />
+      <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Builder" />
       <recent name="D:\schoolProject\study\软件设计模式\DesignPattern\src\State" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Template_Strategy" />
+      <recent name="AbstractFactory" />
       <recent name="State" />
     </key>
   </component>

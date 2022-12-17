@@ -25,10 +25,12 @@ public abstract class Game {
                 judge = JudgeStore.getInstance().orderJudge("Race");
                 judge.setJudgeName("裁判猫猫-竞速组");
                 break;
+                
             case "选美比赛":
                 judge = JudgeStore.getInstance().orderJudge("Pageant");
                 judge.setJudgeName("裁判猫猫-选美组");
                 break;
+
             case "智力比赛":
                 judge = JudgeStore.getInstance().orderJudge("Quiz");
                 judge.setJudgeName("裁判猫猫-智力组");

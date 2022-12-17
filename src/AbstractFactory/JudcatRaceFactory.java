@@ -3,12 +3,16 @@ package AbstractFactory;
 public class JudcatRaceFactory implements JudgeIngredientFactory {
     // 吹罚赛跑
     @Override
-    public Breed CreateRace() {
+
+    public Breed CreateBreed() {
+
         return new Judcat();
     }
 
     @Override
-    public GameType CreateType() {
+
+    public GameClass CreateClass() {
+
         return new CompRace();
     }
 }
