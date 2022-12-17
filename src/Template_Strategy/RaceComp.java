@@ -62,7 +62,7 @@ public class RaceComp extends Game implements Preparation {
         System.out.println("第二名：" + getCatLists().get(getRankByRank()[1]).getCatName());
         System.out.println("第三名：" + getCatLists().get(getRankByRank()[2]).getCatName());
         System.out.println("你的名次：" + getRankByNO()[0]);
-        ScoreSubject.getInstance().notifyObserver(2, getRankByNO(), getScore());
+        ScoreSubject.getInstance().notifyObserver(0, getRankByNO(), getScore());
         if (getRankByNO()[0] >= 6) {
             switch (getCatLists().get(0).getCatState().toString()) {
                 case "StatePerfect":
