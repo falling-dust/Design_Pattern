@@ -58,10 +58,10 @@ public class PageantComp extends Game implements Preparation {
         for (int i = 1; i <= 8; ++i) {
             System.out.println("参赛猫猫号码：" + i + "  名字：" + getCatLists().get(i - 1).getCatName() + "  评分：" + String.format("%.2f",getScore()[i - 1]) + "分");
         }
-        System.out.println("第一名：" + getCatLists().get(getRankByRank()[0]).getCatName());
-        System.out.println("第二名：" + getCatLists().get(getRankByRank()[1]).getCatName());
-        System.out.println("第三名：" + getCatLists().get(getRankByRank()[2]).getCatName());
-        System.out.println("你的名次：" + getRankByNO()[0]);
+        System.out.println("第一名：" + getCatLists().get(getRankByRank()[7]).getCatName());
+        System.out.println("第二名：" + getCatLists().get(getRankByRank()[6]).getCatName());
+        System.out.println("第三名：" + getCatLists().get(getRankByRank()[5]).getCatName());
+        System.out.println("你的名次：" +  (9-getRankByNO()[0]));
         ScoreSubject.getInstance().notifyObserver(2, getRankByNO(), getScore());
         if (getRankByNO()[0] >= 6) {
             switch (getCatLists().get(0).getCatState().toString()) {

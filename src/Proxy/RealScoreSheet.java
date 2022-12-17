@@ -26,10 +26,16 @@ public class RealScoreSheet implements ScoreSheet {
             }
             if (GameContainer.getInstance().get(i).isVisited()) {
                 Game game = GameContainer.getInstance().get(i);
-                for (int j = 1; j <= 8; ++j) {
-                    System.out.println("参赛编号：" + j + "  姓名：" + game.getCatLists().get(j - 1).getCatName()
-                            + "  成绩：" + game.getScore()[j - 1] + "秒");
+                if ( i == 0)
+                    for (int j = 1; j <= 8; ++j) {
+                        System.out.println("参赛编号：" + j + "  姓名：" + game.getCatLists().get(j - 1).getCatName()
+                                + "  成绩：" + game.getScore()[j - 1] + "秒");
                 }
+                else
+                    for (int j = 1; j <= 8; ++j) {
+                        System.out.println("参赛编号：" + j + "  姓名：" + game.getCatLists().get(j - 1).getCatName()
+                                + "  评分：" + game.getScore()[j - 1] + "分");
+                    }
             }
         }
     }

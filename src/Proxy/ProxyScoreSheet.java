@@ -11,5 +11,7 @@ public class ProxyScoreSheet implements ScoreSheet {
             this.realScoreSheet = new RealScoreSheet();
         }
         System.out.println("成绩单如下：");
+        realScoreSheet.printScoreSheet();
+        System.out.println("成绩单打印完成！");
     }
 }

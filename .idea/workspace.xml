@@ -6,15 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command_Memento/CCommandFn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command_Memento/CCommandFn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command_Memento/FeedCondiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command_Memento/FeedCondiment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mediator/CMediatorFn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mediator/CMediatorFn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleFactory/CatFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleFactory/CatFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Proxy/ProxyScoreSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proxy/ProxyScoreSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Proxy/RealScoreSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Proxy/RealScoreSheet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Singleton_LazyInitialization/PetCatBattle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/StateCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State/StateCommon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/StatePerfect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State/StatePerfect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State/StateTired.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State/StateTired.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/HandcraftComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/HandcraftComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +24,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <servers />
   </component>
