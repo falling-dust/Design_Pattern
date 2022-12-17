@@ -1,5 +1,8 @@
 package Singleton_LazyInitialization;
 
+import Builder.Game;
+import Builder.GamesBuilder;
+import Command_Memento.CCommandFn;
 import Composite.Menu;
 import Composite.MenuOption;
 import Facade.Facade;
@@ -8,10 +11,27 @@ import Filter.CompetitionLevelCriteria;
 import Filter.Criteria;
 import Filter.RagDollCatCriteria;
 import Iterator.CatContainer;
+import Iterator.GameContainer;
+import Mediator.CMediatorFn;
+import Prototpye_Flyweight.CPrototypeFn;
+import Proxy.ProxyScoreSheet;
+import Proxy.ScoreSheet;
+import Servant.Preparation;
+import Servant.Worker;
 import SimpleFactory.Cat;
 import SimpleFactory.CatFactory;
 
+
 import java.util.ArrayList;
+import Bridge.*;
+import FactoryMethod.*;
+import State.StateCommon;
+import State.StatePerfect;
+import Template_Strategy.HandcraftComp;
+import Template_Strategy.PageantComp;
+import Template_Strategy.QuizComp;
+import Template_Strategy.RaceComp;
+import Visitor.CVisitorFn;
 import java.util.Scanner;
 
 public class PetCatBattle {
@@ -98,10 +118,10 @@ public class PetCatBattle {
         CatContainer.getInstance().add(catFactory.createCat("中华田园猫", "赛级"));
         CatContainer.getInstance().add(catFactory.createCat("加菲猫", "血统级"));
         //构建比赛项目
-//        GamesBuilder.getInstance().buildGames();
-//        for (Game game : GameContainer.getInstance().getGames()) {
-//            game.showGameInfo();
-//        }
+        GamesBuilder.getInstance().buildGames();
+        for (Game game : GameContainer.getInstance().getGames()) {
+            game.showGameInfo();
+        }
         //检录
         Facade facade = new Facade();
         facade.method();
@@ -112,21 +132,21 @@ public class PetCatBattle {
         //创建比赛实例
         //实例待填写
         int element = 0;
-        MenuOption run_100 = new MenuOption("", CatContainer.getInstance().get(0));
-        MenuOption run_1000 = new MenuOption("", CatContainer.getInstance().get(1));
-        MenuOption swim_400 = new MenuOption("", CatContainer.getInstance().get(2));
-        MenuOption boxing = new MenuOption("", CatContainer.getInstance().get(3));
+        MenuOption speed_race = new MenuOption("竞速比赛", GameContainer.getInstance().get(0));
+        MenuOption beauty_race = new MenuOption("选美比赛", GameContainer.getInstance().get(1));
+        MenuOption intelligence_race = new MenuOption("智力比赛", GameContainer.getInstance().get(2));
+        MenuOption skill_race = new MenuOption("技术比赛", GameContainer.getInstance().get(3));
 
-        gameMenu.add(run_100);
-        gameMenu.add(run_1000);
-        gameMenu.add(swim_400);
-        gameMenu.add(boxing);
+        gameMenu.add(speed_race);
+        gameMenu.add(beauty_race);
+        gameMenu.add(intelligence_race);
+        gameMenu.add(skill_race);
         //喂养猫猫（对应饮品台，我们补充消耗金币功能）
-        MenuOption drinkTable = new MenuOption("饮品台", element);
-        MenuOption queryRank = new MenuOption("询问成绩", element);
-        MenuOption buyEquipment = new MenuOption("买装备", element);
-        MenuOption printRank = new MenuOption("打印成绩单", element);
-        MenuOption meetAudience = new MenuOption("粉丝见面会", element);
+        MenuOption drinkTable = new MenuOption("猫猫喂食区", element);
+        MenuOption queryRank = new MenuOption("询问比赛成绩", element);
+        MenuOption buyEquipment = new MenuOption("购买猫猫神装", element);
+        MenuOption printRank = new MenuOption("打印不成绩单", element);
+        MenuOption meetAudience = new MenuOption("猫猫友好会晤", element);
         rootMenu.add(gameMenu);
         rootMenu.add(drinkTable);
         rootMenu.add(queryRank);
@@ -140,67 +160,155 @@ public class PetCatBattle {
         while (i != 0) {
             switch (i) {
                 case 1: {//比赛
-//                    gameMenu.printMenu();
-//                    Game game;
-//                    switch (input.nextInt()) {
-//                        case 1:
-//                            game = (OneHundredMetersRunning) (gameMenu.getMenu().get(0).option);
-//                            if (game.isVisited()) {
-//                                System.out.println("该项目已结束，请参加其他项目！");
-//                                break;
-//                            }
-//                            Worker worker1 = new Worker();
-//                            worker1.prepare((Preparation) game);
-//                            game.gameStart();
-//                            game.gameEnd();
-//                            ++gameVisited;
-//                            break;
-//                        case 2:
-//                            game = (OneThousandMetersRunning) (gameMenu.getMenu().get(1).option);
-//                            if (game.isVisited()) {
-//                                System.out.println("该项目已结束，请参加其他项目！");
-//                                break;
-//                            }
-//                            Worker worker2 = new Worker();
-//                            worker2.prepare((Preparation) game);
-//                            game.gameStart();
-//                            game.gameEnd();
-//                            ++gameVisited;
-//                            break;
-//                        case 3:
-//                            game = (FourHundredMetersSwimming) (gameMenu.getMenu().get(2).option);
-//                            if (game.isVisited()) {
-//                                System.out.println("该项目已结束，请参加其他项目！");
-//                                break;
-//                            }
-//                            Worker worker3 = new Worker();
-//                            worker3.prepare((Preparation) game);
-//                            game.gameStart();
-//                            game.gameEnd();
-//                            ++gameVisited;
-//                            break;
-//                        case 4:
-//                            game = (Boxing) (gameMenu.getMenu().get(3).option);
-//                            if (game.isVisited()) {
-//                                System.out.println("该项目已结束，请参加其他项目！");
-//                                break;
-//                            }
-//                            game.gameStart();
-//                            game.gameEnd();
-//                            ++gameVisited;
-//                            break;
-//                        case 0:
-//                            run_100.getLast().printMenu();
-//                            i = input.nextInt();
-//                            break;
-//                        default:
-//                            break;
-//                    }
-//                    if (gameVisited == 3) {
-//                        System.out.println("");
-//                    }
+                    gameMenu.printMenu();
+                    Game game;
+                    switch (input.nextInt()) {
+                        case 1:
+                            game = (RaceComp) (gameMenu.getMenu().get(0).option);
+                            if (game.isVisited()) {
+                                System.out.println("该项目已结束，请参加其他项目！");
+                                break;
+                            }
+                            Worker worker1 = new Worker();
+                            worker1.prepare((Preparation) game);
+                            game.gameStart();
+                            game.gameEnd();
+                            ++gameVisited;
+                            break;
+                        case 2:
+                            game = (PageantComp) (gameMenu.getMenu().get(1).option);
+                            if (game.isVisited()) {
+                                System.out.println("该项目已结束，请参加其他项目！");
+                                break;
+                            }
+                            Worker worker2 = new Worker();
+                            worker2.prepare((Preparation) game);
+                            game.gameStart();
+                            game.gameEnd();
+                            ++gameVisited;
+                            break;
+                        case 3:
+                            game = (QuizComp) (gameMenu.getMenu().get(2).option);
+                            if (game.isVisited()) {
+                                System.out.println("该项目已结束，请参加其他项目！");
+                                break;
+                            }
+                            Worker worker3 = new Worker();
+                            worker3.prepare((Preparation) game);
+                            game.gameStart();
+                            game.gameEnd();
+                            ++gameVisited;
+                            break;
+                        case 4:
+                            game = (HandcraftComp) (gameMenu.getMenu().get(3).option);
+                            if (game.isVisited()) {
+                                System.out.println("该项目已结束，请参加其他项目！");
+                                break;
+                            }
+                            game.gameStart();
+                            game.gameEnd();
+                            ++gameVisited;
+                            break;
+                        case 0:
+                            speed_race.getLast().printMenu();
+                            i = input.nextInt();
+                            break;
+                        default:
+                            break;
+                    }
+                    if (gameVisited == 4) {
+                        System.out.println("");
+                    }
+                    break;
+                }
+                case 2:
+                    CCommandFn CCommandFn = (CCommandFn) rootMenu.getMenu().get(1).option;
+                    boolean isDrink = false;
+                    try {
+                        isDrink = CCommandFn.CommandFn();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    if(isDrink){
+                        System.out.println("在猫猫喂食区休息了一会儿，状态提升！");
+                        switch (petCat.getCatState().toString()) {
+                            case "StatePerfect":
+                                break;
+                            case "StateGood":
+                                petCat.setCatState(new StatePerfect());
+                                break;
+                            case "StateTired":
+                                petCat.setCatState(new StateCommon());
+                                break;
+                            default:
+                                break;
+                        }
+                        CMediatorFn.getInstance().MediateFn();
+                    }
+                    break;
+                //查看比赛成绩（查看粉丝数、人气值等）
+                case 3://询问成绩
+                    System.out.println("输入要询问的猫猫编号：");
+                    int n = input.nextInt() - 1;
+                    //待修改
+                    System.out.println("选择要询问的比赛 [1]竞速比赛 [2]选美比赛 [3]智力比赛 [4]技术比赛");
+                    int m = input.nextInt();
+                    Game game = GameContainer.getInstance().get(m - 1);
+                    if (!game.isVisited()) {
+                        System.out.println("该比赛尚未开始！");
+                        break;
+                    }
+                    CVisitorFn.VisitorFn(n, game);
+                    break;
+                case 4://购买装备
+                   System.out.println("欢迎光临运动装备专卖店！");
+                   System.out.println("选购心仪的装备 [1]博士眼镜 [2]讲究围巾");
+                   int k = input.nextInt();
+                   if (k == 1) {
+                        System.out.println(petCat.getCatName()+"原来的美貌值是："+petCat.getBeauty());
+                        System.out.println(petCat.getCatName()+"原来的智力值是："+petCat.getIntelligence());
+                        GlassesFactory glassesFactory = new GlassesFactory();
+                        Equipment glasses = glassesFactory.createEquipment(petCat);
+                        EquipmentImplementor ei = new PerfectEquip();
+                        AbstractCatEquip equipment = new GlassesEquipment(ei);
+                        equipment.EquipEquipment(petCat, glasses);
+                        System.out.println(petCat.getCatName()+"现在的美貌值是："+petCat.getBeauty());
+                        System.out.println(petCat.getCatName()+"现在的智力值是："+petCat.getIntelligence());
+                   } else if (k == 2) {
+                        System.out.println(petCat.getCatName()+"原来的速度值是："+petCat.getSpeed());
+                        System.out.println(petCat.getCatName()+"原来的技巧值是："+petCat.getSkill());
+                        ScarfFactory scarfFactory = new ScarfFactory();
+                        Equipment scarf = scarfFactory.createEquipment(petCat);
+                        EquipmentImplementor ei = new PerfectEquip();
+                        AbstractCatEquip equipment = new ScarfEquipment(ei);
+                        equipment.EquipEquipment(petCat, scarf);
+                        System.out.println(petCat.getCatName()+"原来的速度值是："+petCat.getSpeed());
+                        System.out.println(petCat.getCatName()+"原来的技巧值是："+petCat.getSkill());
+                   }
 
-                    //Filter 如下
+                   System.out.println();
+                    break;
+                case 5:
+                    ScoreSheet proxyScoreSheet = new ProxyScoreSheet();
+                    proxyScoreSheet.printScoreSheet();
+                    break;
+                case 6:
+                    try {
+                        CPrototypeFn.PrototypeFn();
+                    } catch (CloneNotSupportedException e) {
+                        e.printStackTrace();
+                    }
+                case 0:
+                    break;
+                default:
+                    break;
+            }
+            if (gameVisited == 4) {
+                System.out.println("所有比赛均已结束！");
+                break;
+            }
+            
+            //Filter 如下
                     Criteria ragDollCriteria = new RagDollCatCriteria();
                     Criteria competitionLevelCriteria = new CompetitionLevelCriteria();
 
@@ -213,94 +321,12 @@ public class PetCatBattle {
                     System.out.println("\n ----- After Filtering(CompetitionLevel RogDollCat): ----- ");
                     for (Cat cat : filterList) {
                         System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
-                    }
-                    break;
-                }
-                case 2://饮品台
-//                    CCommandFn CCommandFn = (CCommandFn) rootMenu.getMenu().get(1).option;
-//                    boolean isDrink = false;
-//                    try {
-//                        isDrink = CCommandFn.CommandFn();
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                    if(isDrink){
-//                        System.out.println("在饮品台休息了一会儿，状态提升！");
-//                        switch (petCat.getCatState().toString()) {
-//                            case "StatePerfect":
-//                                break;
-//                            case "StateGood":
-//                                petCat.setCatState(new StatePerfect());
-//                                break;
-//                            case "StateTired":
-//                                petCat.setCatState(new StateGood());
-//                                break;
-//                            default:
-//                                break;
-//                        }
-//                        CMediatorFn.getInstance().MediateFn();
-//                    }
-                    break;
-                //查看比赛成绩（查看粉丝数、人气值等）
-                case 3://询问成绩
-//                    System.out.println("输入要询问的猫猫编号：");
-//                    int n = input.nextInt() - 1;
-//                    //待修改
-//                    System.out.println("选择要询问的比赛 [1]100m赛跑 [2]1000m赛跑 [3]400m游泳");
-//                    int m = input.nextInt();
-//                    Game game = GameContainer.getInstance().get(m - 1);
-//                    if (!game.isVisited()) {
-//                        System.out.println("该比赛尚未开始！");
-//                        break;
-//                    }
-//                    CVisitorFn.VisitorFn(n, game);
-                    break;
-                case 4://购买装备
-//                    //待修改
-//                    System.out.println("欢迎光临运动装备专卖店！");
-//                    System.out.println("选购心仪的装备 [1]运动跑鞋 [2]运动护腕");
-//                    int k = input.nextInt();
-//                    if (k == 1) {
-//                        SportShoesFactory sportShoesFactory = new SportShoesFactory();
-//                        Equipment sportShoes = sportShoesFactory.createEquipment(player);
-//                        EquipmentImplementor ei = new PerfectEquip();
-//                        AbstractAnimalEquip equipment = new SportShoesEquipment(ei);
-//                        equipment.EquipEquipment(player, sportShoes);
-//                    } else if (k == 2) {
-//                        BracerFactory bracerFactory = new BracerFactory();
-//                        Equipment bracer = bracerFactory.createEquipment(player);
-//                        EquipmentImplementor ei = new PerfectEquip();
-//                        AbstractAnimalEquip equipment = new BracerEquipment(ei);
-//                        equipment.EquipEquipment(player, bracer);
-//                    }
-                    break;
-                case 5:
-//                    ScoreSheet proxyScoreSheet = new ProxyScoreSheet();
-//                    proxyScoreSheet.printScoreSheet();
-                    break;
-                case 6:
-//                    try {
-//                        CPrototypeFn.PrototypeFn();
-//                    } catch (CloneNotSupportedException e) {
-//                        e.printStackTrace();
-//                    }
-                case 0:
-                    break;
-                default:
-                    break;
-            }
-//            if (gameVisited == 3) {
-//                System.out.println("所有比赛均已结束！");
-//                break;
-//            }
+                        }
+            
             rootMenu.printMenu();
             i = input.nextInt();
-//        }
-//        System.out.println("动物运动会到此结束！");
-//    }
         }
-        petCat.showCatInfo();
-        System.out.println("养成比拼到此结束！");
+        System.out.println("养成比拼到此结束！感谢你的参与");
     }
     private static class SingletonHolder {
         // 静态初始化器，有JVM来保证线程安全
