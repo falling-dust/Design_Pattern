@@ -1,4 +1,8 @@
 package Prototpye_Flyweight;
+//  @program: AnimalGame
+//  @description: 粉丝见面会
+//  @author: zxa
+//  @create: 2022/12/17
 
 public abstract class Audience implements Cloneable {
 

@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/AttributeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/Audience.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/AudienceCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/CPrototypeFn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/ChCountryCatAudience.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/FlyweightPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/GarfieldAudience.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prototpye_Flyweight/RagdollAudience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

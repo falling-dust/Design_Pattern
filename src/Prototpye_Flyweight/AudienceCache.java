@@ -1,6 +1,10 @@
 package Prototpye_Flyweight;
 
 import java.util.Hashtable;
+//  @program: AnimalGame
+//  @description: 粉丝见面会
+//  @author: zxa
+//  @create: 2022/12/17
 
 
 public class AudienceCache {
