@@ -4,49 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更">
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Breed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompHandcraft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompPageant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompQuiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompRace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/GameType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Judcat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatHandcraftFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatPageantFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatQuizFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatRaceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Judge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeIngredientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Builder/GamesBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainOfResponsibility/AbstractOpponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainOfResponsibility/CatFighter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChainOfResponsibility/CatFighters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/GameContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/GameIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/JudgeContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/JudgeIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer/CatObserve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer/ScoreSubject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Observer/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servant/Preparation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servant/Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/HandcraftComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Audience.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/CVisitorFn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Hall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/RankingList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/RankingViewer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Visitor/Visitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,6 +52,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -122,7 +81,7 @@
       <workItem from="1671161105455" duration="8751000" />
       <workItem from="1671208146401" duration="1685000" />
       <workItem from="1671211597605" duration="2857000" />
-      <workItem from="1671248101792" duration="4977000" />
+      <workItem from="1671248101792" duration="5309000" />
     </task>
     <servers />
   </component>
