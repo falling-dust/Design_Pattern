@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Breed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompHandcraft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompPageant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompQuiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/CompRace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/GameType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Judcat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatHandcraftFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatPageantFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatQuizFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudcatRaceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/Judge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeIngredientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AbstractFactory/JudgeStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FrontController/CatView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FrontController/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FrontController/Dispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FrontController/JudgeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FrontController/TestForFrontController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servant/Preparation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servant/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/HandCraftComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +68,7 @@
       <recent name="D:\schoolProject\study\软件设计模式\DesignPattern\src\State" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Template_Strategy" />
       <recent name="AbstractFactory" />
       <recent name="State" />
     </key>
@@ -85,7 +83,7 @@
       <updated>1671081750493</updated>
       <workItem from="1671081751835" duration="1491000" />
       <workItem from="1671093915710" duration="9101000" />
-      <workItem from="1671239557483" duration="4609000" />
+      <workItem from="1671239557483" duration="9414000" />
     </task>
     <servers />
   </component>
