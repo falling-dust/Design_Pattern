@@ -3,7 +3,8 @@ package Iterator;
 import AbstractFactory.Judge;
 import java.util.ArrayList;
 
-public class JudgeContainer implements Container{
+public class JudgeContainer implements Container  {
+
     //裁判容器
 
     //单例模式

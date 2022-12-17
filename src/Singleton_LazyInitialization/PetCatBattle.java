@@ -12,6 +12,7 @@ import Servant.Preparation;
 import Servant.Worker;
 import SimpleFactory.Cat;
 import SimpleFactory.CatFactory;
+
 import Bridge.*;
 import FactoryMethod.*;
 import Template_Strategy.HandcraftComp;
@@ -249,6 +250,7 @@ public class PetCatBattle {
                     CVisitorFn.VisitorFn(n, game);
                     break;
                 case 4://购买装备
+
                    //待修改
                    System.out.println("欢迎光临运动装备专卖店！");
                    System.out.println("选购心仪的装备 [1]博士眼镜 [2]讲究围巾");
