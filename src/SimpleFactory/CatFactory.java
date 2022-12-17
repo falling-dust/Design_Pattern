@@ -25,6 +25,18 @@ public class CatFactory {
             cat.setBeauty(99);
             cat.setSkill(108);
         }
+
+        if (ancestry == "血统级") {
+            cat.setSpeed(cat.getSpeed()* 1.1) ;
+            cat.setIntelligence(cat.getIntelligence()*1.1);
+            cat.setBeauty(cat.getBeauty()*1.1);
+            cat.setSkill(cat.getSkill()* 1.1); ;
+        } else if (ancestry == "赛级") {
+            cat.setSpeed(cat.getSpeed()* 1.2) ;
+            cat.setIntelligence(cat.getIntelligence()*1.2);
+            cat.setBeauty(cat.getBeauty()*1.2);
+            cat.setSkill(cat.getSkill()* 1.2); ;
+        }
         cat.setRank(new int[]{0, 0, 0});
         cat.setScore(new double[]{0, 0, 0});
         cat.setCatState(new StateCommon());

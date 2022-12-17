@@ -21,14 +21,17 @@ public class AudienceCache {
     public static void loadCache() {
         Audience_ChCountryCat chCountryCatAudience = new Audience_ChCountryCat();
         chCountryCatAudience.setId("1");
+        chCountryCatAudience.setAge(4);
         audienceHashtable.put(chCountryCatAudience.getId(), chCountryCatAudience);
 
         Audience_Garfield garfieldAudience = new Audience_Garfield();
         garfieldAudience.setId("2");
+        garfieldAudience.setAge(1);
         audienceHashtable.put(garfieldAudience.getId(), garfieldAudience);
 
         Audience_Ragdoll bearAudience = new Audience_Ragdoll();
         bearAudience.setId("3");
+        bearAudience.setAge(2);
         audienceHashtable.put(bearAudience.getId(), bearAudience);
     }
 }

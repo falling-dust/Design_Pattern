@@ -1,8 +1,7 @@
 package Iterator;
 
 import AbstractFactory.Judge;
-
-public class JudgeIterator implements Iterator {
+public class JudgeIterator implements  Iterator{
     //裁判的迭代器类
     private JudgeContainer judgeContainer;
     private int index;
