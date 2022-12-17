@@ -1,4 +1,4 @@
-import LazyInitialization.PetCatBattle;
+import Singleton_LazyInitialization.PetCatBattle;
 
 import java.util.Scanner;
 
