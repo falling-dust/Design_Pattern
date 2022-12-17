@@ -6,6 +6,10 @@ import Command_Memento.CCommandFn;
 import Composite.Menu;
 import Composite.MenuOption;
 import Facade.Facade;
+import Filter.AndCriteria;
+import Filter.CompetitionLevelCriteria;
+import Filter.Criteria;
+import Filter.RagDollCatCriteria;
 import Iterator.CatContainer;
 import Iterator.GameContainer;
 import Mediator.CMediatorFn;
@@ -17,6 +21,8 @@ import Servant.Worker;
 import SimpleFactory.Cat;
 import SimpleFactory.CatFactory;
 
+
+import java.util.ArrayList;
 import Bridge.*;
 import FactoryMethod.*;
 import State.StateCommon;
@@ -26,7 +32,6 @@ import Template_Strategy.PageantComp;
 import Template_Strategy.QuizComp;
 import Template_Strategy.RaceComp;
 import Visitor.CVisitorFn;
-
 import java.util.Scanner;
 
 public class PetCatBattle {
@@ -302,6 +307,22 @@ public class PetCatBattle {
                 System.out.println("所有比赛均已结束！");
                 break;
             }
+            
+            //Filter 如下
+                    Criteria ragDollCriteria = new RagDollCatCriteria();
+                    Criteria competitionLevelCriteria = new CompetitionLevelCriteria();
+
+                    System.out.println("\n ----- Before Filtering: ----- ");
+                    for (Cat cat : CatContainer.getInstance().getCats()) {
+                        System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
+                    }
+                    AndCriteria andCriteria = new AndCriteria(ragDollCriteria, competitionLevelCriteria);
+                    ArrayList<Cat> filterList = andCriteria.meetCriteria(CatContainer.getInstance().getCats());
+                    System.out.println("\n ----- After Filtering(CompetitionLevel RogDollCat): ----- ");
+                    for (Cat cat : filterList) {
+                        System.out.println(cat.getCatAncestry().getAncestry() + cat.getCatBreed().getBreed() + ":" + cat.getCatName());
+                        }
+            
             rootMenu.printMenu();
             i = input.nextInt();
         }
