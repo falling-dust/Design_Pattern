@@ -20,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/PageantComp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/QuizComp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Template_Strategy/RaceComp.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
 
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -75,9 +77,10 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+
       <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Iterator" />
       <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src" />
       <recent name="G:\Code&amp;Project\NekoPro\Design_Pattern\src\Builder" />
@@ -125,7 +128,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Siyuson" />
+                        <option value="fqr" />
                       </list>
                     </value>
                   </entry>
