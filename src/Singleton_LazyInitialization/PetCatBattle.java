@@ -2,12 +2,16 @@ package Singleton_LazyInitialization;
 
 import Builder.Game;
 import Builder.GamesBuilder;
+import Command_Memento.CCommandFn;
 import Composite.Menu;
 import Composite.MenuOption;
 import Facade.Facade;
 import Iterator.CatContainer;
 import Iterator.GameContainer;
+import Mediator.CMediatorFn;
 import Prototpye_Flyweight.CPrototypeFn;
+import Proxy.ProxyScoreSheet;
+import Proxy.ScoreSheet;
 import Servant.Preparation;
 import Servant.Worker;
 import SimpleFactory.Cat;
@@ -15,6 +19,8 @@ import SimpleFactory.CatFactory;
 
 import Bridge.*;
 import FactoryMethod.*;
+import State.StateCommon;
+import State.StatePerfect;
 import Template_Strategy.HandcraftComp;
 import Template_Strategy.PageantComp;
 import Template_Strategy.QuizComp;
@@ -131,10 +137,10 @@ public class PetCatBattle {
         gameMenu.add(intelligence_race);
         gameMenu.add(skill_race);
         //喂养猫猫（对应饮品台，我们补充消耗金币功能）
-        MenuOption drinkTable = new MenuOption("饮品台", element);
-        MenuOption queryRank = new MenuOption("询问成绩", element);
-        MenuOption buyEquipment = new MenuOption("买装备", element);
-        MenuOption printRank = new MenuOption("打印成绩单", element);
+        MenuOption drinkTable = new MenuOption("猫猫喂食区", element);
+        MenuOption queryRank = new MenuOption("询问比赛成绩", element);
+        MenuOption buyEquipment = new MenuOption("购买猫猫神装", element);
+        MenuOption printRank = new MenuOption("打印不成绩单", element);
         MenuOption meetAudience = new MenuOption("猫猫友好会晤", element);
         rootMenu.add(gameMenu);
         rootMenu.add(drinkTable);
@@ -210,30 +216,30 @@ public class PetCatBattle {
                     }
                     break;
                 }
-                case 2://饮品台
-//                    CCommandFn CCommandFn = (CCommandFn) rootMenu.getMenu().get(1).option;
-//                    boolean isDrink = false;
-//                    try {
-//                        isDrink = CCommandFn.CommandFn();
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                    if(isDrink){
-//                        System.out.println("在饮品台休息了一会儿，状态提升！");
-//                        switch (petCat.getCatState().toString()) {
-//                            case "StatePerfect":
-//                                break;
-//                            case "StateGood":
-//                                petCat.setCatState(new StatePerfect());
-//                                break;
-//                            case "StateTired":
-//                                petCat.setCatState(new StateGood());
-//                                break;
-//                            default:
-//                                break;
-//                        }
-//                        CMediatorFn.getInstance().MediateFn();
-//                    }
+                case 2:
+                    CCommandFn CCommandFn = (CCommandFn) rootMenu.getMenu().get(1).option;
+                    boolean isDrink = false;
+                    try {
+                        isDrink = CCommandFn.CommandFn();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    if(isDrink){
+                        System.out.println("在猫猫喂食区休息了一会儿，状态提升！");
+                        switch (petCat.getCatState().toString()) {
+                            case "StatePerfect":
+                                break;
+                            case "StateGood":
+                                petCat.setCatState(new StatePerfect());
+                                break;
+                            case "StateTired":
+                                petCat.setCatState(new StateCommon());
+                                break;
+                            default:
+                                break;
+                        }
+                        CMediatorFn.getInstance().MediateFn();
+                    }
                     break;
                 //查看比赛成绩（查看粉丝数、人气值等）
                 case 3://询问成绩
@@ -250,8 +256,6 @@ public class PetCatBattle {
                     CVisitorFn.VisitorFn(n, game);
                     break;
                 case 4://购买装备
-
-                   //待修改
                    System.out.println("欢迎光临运动装备专卖店！");
                    System.out.println("选购心仪的装备 [1]博士眼镜 [2]讲究围巾");
                    int k = input.nextInt();
@@ -280,8 +284,8 @@ public class PetCatBattle {
                    System.out.println();
                     break;
                 case 5:
-//                    ScoreSheet proxyScoreSheet = new ProxyScoreSheet();
-//                    proxyScoreSheet.printScoreSheet();
+                    ScoreSheet proxyScoreSheet = new ProxyScoreSheet();
+                    proxyScoreSheet.printScoreSheet();
                     break;
                 case 6:
                     try {
@@ -294,15 +298,12 @@ public class PetCatBattle {
                 default:
                     break;
             }
-//            if (gameVisited == 3) {
-//                System.out.println("所有比赛均已结束！");
-//                break;
-//            }
+            if (gameVisited == 4) {
+                System.out.println("所有比赛均已结束！");
+                break;
+            }
             rootMenu.printMenu();
             i = input.nextInt();
-//        }
-//        System.out.println("动物运动会到此结束！");
-//    }
         }
         System.out.println("养成比拼到此结束！感谢你的参与");
     }
