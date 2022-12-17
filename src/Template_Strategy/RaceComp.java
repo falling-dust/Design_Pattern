@@ -68,7 +68,7 @@ public class RaceComp extends Game implements Preparation {
                 case "StatePerfect":
                     getCatLists().get(0).setCatState(new StateCommon());
                     break;
-                case "StateGood":
+                case "StateCommon":
                     getCatLists().get(0).setCatState(new StateTired());
                     break;
                 case "StateTired":
@@ -80,7 +80,7 @@ public class RaceComp extends Game implements Preparation {
             switch (getCatLists().get(0).getCatState().toString()) {
                 case "StatePerfect":
                     break;
-                case "StateGood":
+                case "StateCommon":
                     getCatLists().get(0).setCatState(new StatePerfect());
                     break;
                 case "StateTired":

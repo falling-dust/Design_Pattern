@@ -68,7 +68,7 @@ public class HandcraftComp extends Game implements Preparation {
                 case "StatePerfect":
                     getCatLists().get(0).setCatState(new StateCommon());
                     break;
-                case "StateGood":
+                case "StateCommon":
                     getCatLists().get(0).setCatState(new StateTired());
                     break;
                 case "StateTired":
@@ -80,7 +80,7 @@ public class HandcraftComp extends Game implements Preparation {
             switch (getCatLists().get(0).getCatState().toString()) {
                 case "StatePerfect":
                     break;
-                case "StateGood":
+                case "StateCommon":
                     getCatLists().get(0).setCatState(new StatePerfect());
                     break;
                 case "StateTired":
@@ -97,7 +97,7 @@ public class HandcraftComp extends Game implements Preparation {
         Random rand = new Random();
         double random = (rand.nextInt(2000) + 9000);
         Cat athlete = getCatLists().get(no);
-        double value = (athlete.getSpeed() * 1 + athlete.getBeauty() * 1 + athlete.getIntelligence() * 1.1 + athlete.getSkill() * 1.3) / athlete.getCatState().getState();
+        double value = (athlete.getSpeed() * 1 + athlete.getBeauty() * 1 + athlete.getIntelligence() * 1.1 + athlete.getSkill() * 1.3) * athlete.getCatState().getState();
         double time = value * 0.5623183 * random / 10000;
         getScore()[no] = time;
     }

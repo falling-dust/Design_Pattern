@@ -37,6 +37,7 @@ import java.util.Scanner;
 
 public class PetCatBattle {
     private Cat petCat;
+    public boolean Emergency=false;
 
     //养成资金暂时放这里，不知道后续调用是否方便
     private int money;
@@ -217,18 +218,6 @@ public class PetCatBattle {
                             break;
                     }
                     System.out.println("猫猫参加完比赛有点累，状态下降！");
-                    switch (petCat.getCatState().toString()) {
-                        case "StatePerfect":
-                            petCat.setCatState(new StateCommon());
-                            break;
-                        case "StateCommon":
-                            petCat.setCatState(new StateTired());
-                            break;
-                        case "StateTired":
-                            break;
-                        default:
-                            break;
-                    }
                     if (gameVisited == 4) {
                         System.out.println("");
                     }
@@ -324,7 +313,8 @@ public class PetCatBattle {
                 break;
             }
 
-            if(gameVisited==2){
+            if(gameVisited==2 && Emergency ==false){
+                Emergency =true;
                 //Filter 如下
                 Criteria ragDollCriteria = new RagDollCatCriteria();
                 Criteria competitionLevelCriteria = new CompetitionLevelCriteria();
