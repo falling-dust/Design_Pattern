@@ -10,34 +10,34 @@ import State.StateTired;
 
 import java.util.Random;
 
-public class HandCraftComp extends Game implements Preparation {
-    public HandCraftComp(String Name) {
+public class HandcraftComp extends Game implements Preparation {
+    public HandcraftComp(String Name) {
         super(Name);
     }
 
     @Override
     public void gamePreparation() {
-        System.out.println("OneThousandMetersRunning Game is preparing!");
-        try {
+        System.out.println("技术大赛即将开始！");
+
+        try {  //sleep必须处理异常
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("OneThousandMetersRunning Game prepared!");
-        for (int i = 0; i < 8; ++i) {
-            getValue(i);
-        }
-        sortScore();
+
+        System.out.println("选手入场完毕！");
     }
 
     @Override
     public void gameStart() {
+
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("OneThousandMetersRunning Game Started!");
+
+        System.out.println("技术大赛开始！");
         for (int i = 0; i < 8; ++i) {
             getValue(i);
         }
@@ -46,29 +46,30 @@ public class HandCraftComp extends Game implements Preparation {
 
     @Override
     public void gameEnd() {
+
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        System.out.println("技术大赛结束!最终成绩：");
         setVisited(true);
-        System.out.println("OneThousandMetersRunning Game Finished!");
-        System.out.println("1000m赛跑最终成绩：");
         for (int i = 1; i <= 8; ++i) {
-            System.out.println("参赛猫猫号码：" + i + "  名字：" + getCatLists().get(i - 1).getAnimalName() + "  成绩：" + getScore()[i - 1] + "秒");
+            System.out.println("参赛猫猫号码：" + i + "  名字：" + getCatLists().get(i - 1).getCatName() + "  成绩：" + getScore()[i - 1] + "秒");
         }
-        System.out.println("第一名：" + getCatLists().get(getRankByRank()[0]).getAnimalName());
-        System.out.println("第二名：" + getCatLists().get(getRankByRank()[1]).getAnimalName());
-        System.out.println("第三名：" + getCatLists().get(getRankByRank()[2]).getAnimalName());
+        System.out.println("第一名：" + getCatLists().get(getRankByRank()[0]).getCatName());
+        System.out.println("第二名：" + getCatLists().get(getRankByRank()[1]).getCatName());
+        System.out.println("第三名：" + getCatLists().get(getRankByRank()[2]).getCatName());
         System.out.println("你的名次：" + getRankByNO()[0]);
         ScoreSubject.getInstance().notifyObserver(2, getRankByNO(), getScore());
         if (getRankByNO()[0] >= 6) {
-            switch (getCatLists().get(0).getAnimalState().toString()) {
+            switch (getCatLists().get(0).getCatState().toString()) {
                 case "StatePerfect":
-                    getCatLists().get(0).setAnimalState(new StateCommon());
+                    getCatLists().get(0).setCatState(new StateCommon());
                     break;
                 case "StateGood":
-                    getCateLists().get(0).setAnimalState(new StateTired());
+                    getCatLists().get(0).setCatState(new StateTired());
                     break;
                 case "StateTired":
                     break;
@@ -76,14 +77,14 @@ public class HandCraftComp extends Game implements Preparation {
                     break;
             }
         } else if (getRankByNO()[0] == 1) {
-            switch (getCatLists().get(0).getAnimalState().toString()) {
+            switch (getCatLists().get(0).getCatState().toString()) {
                 case "StatePerfect":
                     break;
                 case "StateGood":
-                    getCatLists().get(0).setAnimalState(new StatePerfect());
+                    getCatLists().get(0).setCatState(new StatePerfect());
                     break;
                 case "StateTired":
-                    getCatLists().get(0).setAnimalState(new StateCommon());
+                    getCatLists().get(0).setCatState(new StateCommon());
                     break;
                 default:
                     break;
@@ -96,9 +97,10 @@ public class HandCraftComp extends Game implements Preparation {
         Random rand = new Random();
         double random = (rand.nextInt(2000) + 9000);
         Cat athlete = getCatLists().get(no);
-        double value = (athlete.getSpeed() * 1.1 + athlete.getBeauty() * 1.2 + athlete.getIntelligence() * 1 + athlete.getSkill() * 1.3) / athlete.getAnimalState().getState();
+        double value = (athlete.getSpeed() * 1 + athlete.getBeauty() * 1 + athlete.getIntelligence() * 1.1 + athlete.getSkill() * 1.3) / athlete.getCatState().getState();
         double time = value * 0.5623183 * random / 10000;
         getScore()[no] = time;
     }
+
 
 }
