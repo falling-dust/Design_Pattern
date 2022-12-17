@@ -56,7 +56,7 @@ public class RaceComp extends Game implements Preparation {
         System.out.println("竞速大赛结束!最终成绩：");
         setVisited(true);
         for (int i = 1; i <= 8; ++i) {
-            System.out.println("参赛猫猫号码：" + i + "  名字：" + getCatLists().get(i - 1).getCatName() + "  成绩：" + getScore()[i - 1] + "秒");
+            System.out.println("参赛猫猫号码：" + i + "  名字：" + getCatLists().get(i - 1).getCatName() + "  成绩：" + String.format("%.3f",getScore()[i - 1])+ "秒");
         }
         System.out.println("第一名：" + getCatLists().get(getRankByRank()[0]).getCatName());
         System.out.println("第二名：" + getCatLists().get(getRankByRank()[1]).getCatName());

@@ -1,9 +1,7 @@
 package Iterator;
 
 import Builder.Game;
-
-public class GameIterator implements Iterator {
-
+public class GameIterator implements Iterator{
     private GameContainer gamesContainer;
     private int index;
 
@@ -24,5 +22,4 @@ public class GameIterator implements Iterator {
         index++;
         return game;
     }
-
 }

@@ -1,10 +1,9 @@
 package Iterator;
 
 import AbstractFactory.Judge;
-
 import java.util.ArrayList;
 
-public class JudgeContainer implements Container  {
+public class JudgeContainer implements Container{
     //裁判容器
 
     //单例模式
@@ -45,4 +44,5 @@ public class JudgeContainer implements Container  {
     public Iterator iterator() {
         return new JudgeIterator(this);
     }
+
 }

@@ -1,12 +1,10 @@
 package Iterator;
 
 import Builder.Game;
-
 import java.util.ArrayList;
 
-public class GameContainer implements Container {
-
-    //单例模式，使运动员管理器可以被全局访问
+public class GameContainer implements Container{
+    //单例模式，使猫猫管理器可以被全局访问
     private static GameContainer instance = new GameContainer();
     //建立game容器
     private ArrayList<Game> games;
