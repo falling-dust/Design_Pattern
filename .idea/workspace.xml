@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更" />
+=======
+    <list default="true" id="db7f794f-b25d-4680-a610-41b2b696bf51" name="变更" comment="变更">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +64,7 @@
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
+<<<<<<< Updated upstream
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -66,6 +73,22 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="State" />
     </key>
+=======
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="DesignPattern" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+>>>>>>> Stashed changes
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
@@ -77,6 +100,7 @@
       <created>1671081750493</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< Updated upstream
       <updated>1671081750493</updated>
       <workItem from="1671081751835" duration="1491000" />
       <workItem from="1671093915710" duration="9101000" />
@@ -85,6 +109,12 @@
       <workItem from="1671208146401" duration="1685000" />
       <workItem from="1671211597605" duration="2857000" />
       <workItem from="1671248101792" duration="5309000" />
+=======
+      <updated>1671284673643</updated>
+      <workItem from="1671284676017" duration="515000" />
+      <workItem from="1671286095328" duration="34000" />
+      <workItem from="1671447726928" duration="2064000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

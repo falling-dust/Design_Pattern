@@ -25,8 +25,8 @@ public class CatFactory {
             cat.setBeauty(99);
             cat.setSkill(108);
         }
-        cat.setRank(new int[]{0, 0, 0});
-        cat.setScore(new double[]{0, 0, 0});
+        cat.setRank(new int[]{0, 0, 0, 0});
+        cat.setScore(new double[]{0, 0, 0, 0});
         cat.setCatState(new StateCommon());
         return cat;
     }
